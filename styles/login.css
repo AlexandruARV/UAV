@@ -10,7 +10,6 @@
 
 body {
   margin: 0;
-  
   font-family: "Roboto", sans-serif;
 }
 .background {
@@ -76,6 +75,7 @@ body {
   row-gap: 2rem;
   width: 460px;
   height: 33rem;
+  border-radius: 0.7rem;
 }
 
 .container_header {
