@@ -14,20 +14,32 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .background {
+  /* position: absolute;
+  width: 100%;
+  height: 100dvh; */
+
   position: absolute;
   width: 100%;
-  height: 100dvh;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden; /
 }
 
 .blurry-background {
-  position: fixed;
-
-  width: 100%;
+  /* position: fixed;
+  width: auto;
   height: 100dvh;
-  background-image: url("/uav-university.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: blur(2.5px); */
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
   filter: blur(2.5px);
 }
 
