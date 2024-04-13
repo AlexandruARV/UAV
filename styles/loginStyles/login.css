@@ -1,0 +1,169 @@
+:root {
+  --primary-color: rgba(97, 105, 109, 0.6);
+  --secondary-color: rgb(60, 61, 73);
+  --text-color: black;
+  --normal-font: 1rem;
+  --small-font: 0.7rem;
+  --big-font: 1.5rem;
+  --biggest-font: 2rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.background {
+  /* position: absolute;
+  width: 100%;
+  height: 100dvh; */
+
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.blurry-background {
+  /* position: fixed;
+  width: auto;
+  height: 100dvh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2.5px); */
+
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  filter: blur(2.5px);
+  z-index: -1;
+}
+
+.header,
+.main {
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.5rem;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  height: 4rem;
+}
+
+.main {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2px;
+}
+.container {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  width: 460px;
+  height: 33rem;
+  border-radius: 0.7rem;
+}
+
+.container_header {
+  font-size: var(--biggest-font);
+  width: 15rem;
+  text-align: center;
+  margin: 0;
+}
+.bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-size: var(--normal-font);
+}
+
+.p_text {
+  margin: 0.5rem;
+  font-size: 20px;
+}
+
+.inputs {
+  margin: 0.3rem 0rem;
+  height: 58px;
+  width: 360px;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 5px 5px 5px rgba(13, 13, 13, 0.5);
+  font-size: var(--big-font);
+  padding-left: 1rem;
+  color: var(--text-color);
+}
+.inputs:focus {
+  outline: none;
+}
+
+.div__password {
+  margin-left: 1.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.eye__img {
+  position: relative;
+  right: 2.5rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+}
+
+.eye__close {
+  width: 1.7rem;
+}
+
+.div_login {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.btn_login {
+  margin-right: 3rem;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: background-color 300ms;
+  font-size: var(--normal-font);
+}
+
+.btn_login:hover {
+  background-color: black;
+  opacity: 0.8;
+  transition: all 300ms;
+}

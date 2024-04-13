@@ -1,0 +1,57 @@
+@media screen and (max-width: 1100px) {
+  .background {
+    width: 100%;
+    height: 800px;
+  }
+  .blurry-background {
+    width: 100%;
+    height: 800px;
+  }
+
+  .header {
+    height: 6rem;
+  }
+
+  .logo {
+    height: 3rem;
+  }
+  .main {
+    margin-top: 5rem;
+  }
+
+  .container {
+    width: 21rem;
+    height: 24rem;
+    row-gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  .container_header {
+    margin-top: 2rem;
+    font-size: var(--big-font);
+  }
+
+  .form {
+    height: 15rem;
+    width: 15rem;
+  }
+  .p_text {
+    font-size: var(--normal-font);
+  }
+
+  .inputs {
+    width: 15rem;
+    height: 2.5rem;
+    font-size: var(--normal-font);
+  }
+
+  .div_login {
+    margin-top: 2rem;
+  }
+  .btn_login {
+    height: 2rem;
+    width: 4rem;
+    font-size: var(--normal-font);
+    margin-right: 1rem;
+  }
+}
